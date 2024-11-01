@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .user-details {
+            margin-bottom: 20px;
+        }
+
+        .logout-button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #F44336; /* Red */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .logout-button:hover {
+            background-color: #D32F2F;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Account</h1>
+    </header>
+
+    <div class="container">
+        <div class="user-details">
+            <h2>Registration Details</h2>
+            <p><strong>Username:</strong> JohnDoe</p>
+            <p><strong>Email:</strong> johndoe@example.com</p>
+            <p><strong>Account Created:</strong> January 1, 2024</p>
+            <!-- Add more user details as necessary -->
+        </div>
+        <button class="logout-button" onclick="logout()">Log Out</button>
+    </div>
+
+    <script>
+        function logout() {
+            // Logic to log out the user
+            alert("Logged out successfully!");
+            // Redirect to login page or home page
+            window.location.href = "login.html"; // Change this as needed
+        }
+    </script>
+</body>
+</html>
